@@ -17,7 +17,7 @@ system_create_user() {
   sudo su - root <<EOF
     sudo useradd -m -s /bin/bash -G sudo deploy
 
-  ENCRYPTED_PASS=7227462
+  ENCRYPTED_PASS=deploybotmal
 
   echo "deploy:${ENCRYPTED_PASS}" | sudo chpasswd
 EOF
@@ -39,7 +39,7 @@ system_git_clone() {
   sleep 2
 
   sudo su - deploy <<EOF
-  git clone https://atendechat:ghp_qlvIm2p62werbc3DCQiC3bQnfxdSMOvEWj33YwL0@github.com/atendechat-org/codatendechat.git /home/deploy/${instancia_add}/
+  git clone https://atendechat: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@github.com/atendechat-org/codatendechat.git /home/deploy/${instancia_add}/
 
   sleep 2
 }
