@@ -39,7 +39,7 @@ system_git_clone() {
   sleep 2
 
   sudo su - deploy <<EOF
-  git clone https://github.com/magalhaes177/supreme-octo-fonte.git /home/deploy/${instancia_add}/
+  git clone https://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@github.com/magalhaes177/expert-waffle.git /home/deploy/${instancia_add}/
 
   sleep 2
 }
